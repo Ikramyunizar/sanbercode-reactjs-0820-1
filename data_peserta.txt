@@ -1,0 +1,6 @@
+Data Peserta Sanbercode Bootcamp ReactJS
+1. Nama: Ikram Yunizar
+2. Email: ikramyunizar@gmail.com
+3. Sistem Operasi yang digunakan: Lubuntu / Windows 10
+4. Akun Gitlab: https://github.com/Ikramyunizar
+5. Akun Telegram: https://t.me/ikramyz
