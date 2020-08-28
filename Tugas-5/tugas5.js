@@ -69,4 +69,5 @@ function pushfilm(name, duration, genres, year) {
     dataFilm.push(filmobject);
 }
 pushfilm("IT", 120, "horror", 1990)
+pushfilm("ET", 120, "Drama", 1991)
 console.log(dataFilm)
