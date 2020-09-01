@@ -3,14 +3,32 @@ class Animal {
     constructor(jenis){
         this.name = jenis;
         this.legs = 4;
-        this.blood_type = "cold_blooded";
+        this.cold_blooded = false;
+    }
+    get jnam() {
+        return this.name;
+    }
+    set jnam(x) {
+        this.name = x;
+    }
+    get legsnam() {
+        return this.legs;
+    }
+    set legsnam(x) {
+        this.legs = x;
+    }
+    get cold_bloodedcha() {
+        return this.cold_blooded;
+    }
+    set cold_bloodedcha(x) {
+        this.cold_blooded = x;
     }
 }
 
 let sheep = new Animal("shaun");
-console.log(sheep.name);
-console.log(sheep.legs);
-console.log(sheep.blood_type);
+console.log(sheep.jnam);
+console.log(sheep.legsnam);
+console.log(sheep.cold_bloodedcha);
 
 class Ape extends Animal{
     constructor(jenis){
@@ -24,13 +42,13 @@ class Ape extends Animal{
 let sungokong = new Ape("sungokong");
 console.log("\n" + sungokong.name);
 console.log(sungokong.legs);
-console.log(sungokong.blood_type);
+console.log(sungokong.cold_blooded);
 sungokong.yell();
 
 class Frog extends Animal{
     constructor(jenis){
         super(jenis);
-        this.blood_type = "hot-blooded";
+        this.cold_blooded = true;
     }
     jump(){
         console.log("Hop-hop");
@@ -39,7 +57,7 @@ class Frog extends Animal{
 let kodok = new Frog("buduk")
 console.log( "\n" + kodok.name);
 console.log(kodok.legs);
-console.log(kodok.blood_type);
+console.log(kodok.cold_blooded);
 kodok.jump();
 
 
